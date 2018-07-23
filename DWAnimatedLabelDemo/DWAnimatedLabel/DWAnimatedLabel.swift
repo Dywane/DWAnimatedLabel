@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum DWAnimationType {
+public enum DWAnimationType {
     case none
     case typewriter
     case shine
@@ -16,7 +16,7 @@ enum DWAnimationType {
     case wave
 } 
 
-class DWAnimatedLabel: UILabel {
+open class DWAnimatedLabel: UILabel {
 
     // MARK: - Public Propertis
     public var animationType = DWAnimationType.none {
@@ -25,7 +25,7 @@ class DWAnimatedLabel: UILabel {
             _animator?.label = self
         }
     }
-    public override var text: String? {
+    open override var text: String? {
         didSet {
             _animator?.label = self
         }
@@ -60,5 +60,13 @@ class DWAnimatedLabel: UILabel {
         animator.duration = duration
         animator.label = self
         animator.startAnimation(completion)
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 } 

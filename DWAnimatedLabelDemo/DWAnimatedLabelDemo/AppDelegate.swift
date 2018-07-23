@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  DWAnimatedLabel
+//  DWAnimatedLabelDemo
 //
-//  Created by dywanedu on 2018/7/20.
+//  Created by dywanedu on 2018/7/23.
 //  Copyright © 2018年 dywanedu. All rights reserved.
 //
 
