@@ -3,6 +3,8 @@ An UILabel subclass that lets you animate text with different types, inspired by
 
 ![wave](https://raw.githubusercontent.com/Dywane/DWAnimatedLabel/master/Gif/wave.gif)
 
+[中文教程](https://dywane.github.io/使用CADisplayLink实现UILabel动画特效/)
+
 ## Features
 - Subclass of `UILabel`, easy to use
 - Use `CADisplayLink`to perform smooth animation
