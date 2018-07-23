@@ -8,7 +8,6 @@
 
 import UIKit
 import DWAnimatedLabel
-import DWLabel
 
 class ViewController: UIViewController {
 
@@ -49,6 +48,7 @@ class ViewController: UIViewController {
         //        label.animationType = .fade
         //        view.addSubview(label)
         //        label.startAnimation(duration: 2.0, nil)
+        
         let label = DWAnimatedLabel(frame: CGRect(x: 20, y: 44, width: UIScreen.main.bounds.size.width, height: 100))
         label.text = "LOADING"
         label.font = UIFont.systemFont(ofSize: 70, weight: .bold)

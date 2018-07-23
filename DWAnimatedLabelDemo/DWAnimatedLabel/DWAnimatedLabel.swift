@@ -19,7 +19,7 @@ public enum DWAnimationType {
 open class DWAnimatedLabel: UILabel {
 
     // MARK: - Public Propertis
-    public var animationType = DWAnimationType.none {
+    open var animationType = DWAnimationType.none {
         didSet {
             _animator = DWAnimator(animationType: animationType, duration: _duration)
             _animator?.label = self
@@ -30,7 +30,7 @@ open class DWAnimatedLabel: UILabel {
             _animator?.label = self
         }
     }
-    public var placeHolderColor: UIColor?
+    open var placeHolderColor: UIColor?
     
     // MARK: - Private Properties
     private(set) var placeHolderView: UIView?
@@ -38,7 +38,7 @@ open class DWAnimatedLabel: UILabel {
     private var _hollowLabel: DWHollowLabel?
     private var _animator: DWAnimator?
     
-    public func startAnimation(duration: TimeInterval, _ completion:(() -> Void)?) {
+    open func startAnimation(duration: TimeInterval, _ completion:(() -> Void)?) {
         guard let animator = _animator else {
             return
         }
