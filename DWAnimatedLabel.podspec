@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DWAnimatedLabel"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "An UILabel subclass that lets you animate text with different types."
 
   # This description is used to generate tags and improve search results.
@@ -65,6 +65,7 @@ Pod::Spec.new do |s|
 
   # s.platform     = :ios
   s.platform     = :ios, "9.0"
+  s.swift_version = "4.1"   
 
   #  When using multiple platforms
    s.ios.deployment_target = "9.0"
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Dywane/DWAnimatedLabel.git", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/Dywane/DWAnimatedLabel.git", :tag => "1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
