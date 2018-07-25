@@ -12,7 +12,7 @@ class DWAnimator: NSObject {
     
     // MARK: - Public Properties
     public var duration: TimeInterval = 2.0
-    public var label: DWAnimatedLabel? {
+    public weak var label: DWAnimatedLabel? {
         didSet {
             guard let text = label?.text else {
                 return
