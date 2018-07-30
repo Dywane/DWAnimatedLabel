@@ -38,9 +38,14 @@ open class DWAnimatedLabel: UILabel {
     private var _hollowLabel: DWHollowLabel?
     private var _animator: DWAnimator?
     
-    open func startAnimation(duration: TimeInterval, _ completion:(() -> Void)?) {
+    open func startAnimation(duration: TimeInterval, nextText: String? = nil,_ completion:(() -> Void)?) {
         guard let animator = _animator else {
             return
+        }
+        if text == nil && nextText == nil {
+            return
+        } else if nextText != nil {
+            text = nextText
         }
         if animationType == .wave {
             placeHolderView = UIView(frame: bounds)

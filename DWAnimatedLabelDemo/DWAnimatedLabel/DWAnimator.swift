@@ -43,6 +43,8 @@ class DWAnimator: NSObject {
         guard let label = label else {
             return
         }
+        
+        setup()
         label.layer.removeAllAnimations()
         
         if !_isAnimating {
@@ -51,7 +53,6 @@ class DWAnimator: NSObject {
             _endTime = duration + _beginTime!
             _displayLink?.isPaused = false
         }
-        
         _isAnimating = true
     }
     
@@ -60,7 +61,6 @@ class DWAnimator: NSObject {
         self.init()
         self.animationType = animationType
         self.duration = duration
-        setup()
     }
     
     private override init() {
@@ -87,7 +87,6 @@ extension DWAnimator {
         }
         guard let labelText = labelText else {
             return
-            
         }
         let attributedString = NSMutableAttributedString(string: labelText)
         var durationArray = [TimeInterval]()
