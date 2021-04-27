@@ -7,11 +7,11 @@ An UILabel subclass that lets you animate text with different types, inspired by
 
 ## Features
 - Subclass of `UILabel`, easy to use
-- Use `CADisplayLink`to perform smooth animation
-- Four different animation
-- Pure swift
+- Use `CADisplayLink` to perform smooth animation
+- Four different animations
+- Pure Swift
 
-![typewritter](https://raw.githubusercontent.com/Dywane/DWAnimatedLabel/master/Gif/typewriter.gif)
+![typewriter](https://raw.githubusercontent.com/Dywane/DWAnimatedLabel/master/Gif/typewriter.gif)
 
 ![shine](https://raw.githubusercontent.com/Dywane/DWAnimatedLabel/master/Gif/shine.gif)
 
@@ -19,7 +19,7 @@ An UILabel subclass that lets you animate text with different types, inspired by
 
 ## Installation
 
-You want to add `pod 'DWAnimatedLabel', '~> 1.1'` similar to the following to your Podfile:
+You want to add `pod 'DWAnimatedLabel', '~> 1.1'` or similar to the following to your Podfile:
 
 ```ruby
 target 'MyApp' do
@@ -35,7 +35,7 @@ Alternatively to give it a test run, run the command:
 
 ## Usage
 
-You need to import the module fire:
+First, import the module:
 
 ```swift 
 import DWAnimatedLabel
@@ -55,13 +55,13 @@ Also you can choose animation type by setting the `animationType` property.
 label.animationType = .wave
 ```
 
-If you are using `wave` animation, you also need to set the `placeHolderColor` property, otherwise it will be `UIColor.lightGray`.
+If you are using `wave` animation, you also need to set the `placeHolderColor` property, which is `UIColor.lightGray` by default.
 
 ```swift
 label.placeHolderColor = .blue
 ```
 
-After setting up these properties you can use `startAnimation(duration: TimeInterval, _ completion:(() -> Void)?)` to start perform animation.
+After setting up these properties you can use `startAnimation(duration: TimeInterval, _ completion:(() -> Void)?)` to start performing the animation.
 
 ## Requirements
 
@@ -75,7 +75,7 @@ You are welcome to fork and submit pull requests or issues.
 
 ## License
 
-DWAnimatedLabel is open-sourced software lincened under the MIT license.
+DWAnimatedLabel is open-source software licensed under the MIT license.
 
 ## Credits
 
